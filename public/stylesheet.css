@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+  background-color: lightgrey;
+  border: none;
+}
+
+header {
+  display: flex;
+  border: none;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  justify-content: space-around;
+}
+
+.title:hover {
+  font-size: 105%;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  vertical-align: middle;
+}
+
+li {
+  display: inline-block;
+  padding: 20px;
+}
+
+li:hover {
+  text-decoration: underline;
+  font-size: larger;
+}
+
+/*.event {
+  background-color: white;
+  border-radius: 20px;
+}*/
+
+.event:hover {
+  padding: 10px
+  background-color: slategray;
+}
