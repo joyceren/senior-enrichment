@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
 const initialState = {}
 
@@ -7,5 +7,6 @@ const rootReducer = function(state = initialState, action) {
     default: return state
   }
 };
+
 
 export default rootReducer

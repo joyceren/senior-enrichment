@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
 body {
     margin: 0;
+    margin-top: 150px;
 }
 
 html {
@@ -16,9 +19,12 @@ header {
   border: none;
   background-color: white;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 25px;
   vertical-align: middle;
   justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .title:hover {
@@ -41,12 +47,82 @@ li:hover {
   font-size: larger;
 }
 
-/*.event {
-  background-color: white;
+.event {
+  display: inline-block;
+  background-color: silver;
   border-radius: 20px;
-}*/
+  padding:10px;
+  margin:5px;
+}
 
 .event:hover {
+  transform: scale(1.25);
+  background-color: yellowgreen;
+}
+
+h2 {
+  display: flex;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+}
+
+.week-container {
+  margin-left:15%;
+  margin-right:15%;
+  align-content: center;
+}
+
+.week {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+}
+
+.week-title {
+  margin-left:45%;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  height: 150px;
+}
+
+.userlist {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+tr {
+  background-color: white;
+}
+
+td{
   padding: 10px
-  background-color: slategray;
+}
+
+.calendar-container {
+  margin-bottom: 50px;
 }

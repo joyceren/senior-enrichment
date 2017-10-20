@@ -32,14 +32,6 @@ const Event = db.define('event', {
     type: SEQUELIZE.INTEGER,
   },
 
-  // attendees: {
-  //   type: SEQUELIZE.ARRAY(SEQUELIZE.INTEGER),
-  // },
-
-  organizer: {
-    type: SEQUELIZE.INTEGER,
-  },
-
 });
 
 
@@ -49,13 +41,8 @@ const User = db.define('user', {
     type: SEQUELIZE.STRING,
   },
 
-  // events: {
-  //   type: SEQUELIZE.VIRTUAL,
-  //   get: function() {}
-  // },
-
   phone: {
-    type: SEQUELIZE.INTEGER,
+    type: SEQUELIZE.STRING,
     isNumeric: true,
   },
 

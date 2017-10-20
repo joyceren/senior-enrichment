@@ -1,15 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Navbar(props) {
+export default function Event(props) {
   event = props.eventInfoObj;
-
   return (
-    <div className="event">
-      <p>Event Name:{event.name}</p>
-      <p>When:{event.time}</p>
-      <p>Where:{event.location}</p>
-      <p>Description:{event.description}</p>
-      <p>Cost:${event.cost}</p>
-    </div>
+    <Link to={`/events/${event.id}`}>
+      <div key={event.id} className="event">
+        <h3>{event.name}</h3>
+        <div>
+          <h4>When:</h4> <p>{event.time}</p>
+        </div>
+        <div>
+          <h4>Where:</h4> <p>{event.location}</p>
+        </div>
+        <div>
+          <h4>Cost:</h4> <p>${event.cost}</p>
+        </div>
+      </div>
+    </Link>
   );
 }
